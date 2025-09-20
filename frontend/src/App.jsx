@@ -1,6 +1,6 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import Homepage from './pages/homepage.jsx';
+import Homepage from './pages/Homepage.jsx';
 import CreateNote from './pages/CreateNote.jsx';
 import Notedetail from './pages/Notedetail.jsx';
 import toast, { Toaster } from 'react-hot-toast';
