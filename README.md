@@ -4,6 +4,8 @@ ThinkBoard is a **modern MERN application** for creating, editing, and managing 
 It comes with a **beautiful Aurora-themed UI**, interactive components, and smooth gradient effects for a modern look.  
 
 ---
+🌐 **Live Demo:** [ThinkBoard App](https://thinkboard-kv8n.onrender.com/)
+
 
 ## ✨ Features
 
