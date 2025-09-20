@@ -12,12 +12,16 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.13",
     "axios": "^1.12.2",
+    "build": "^0.1.4",
     "cors": "^2.8.5",
+    "npm": "^11.6.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-hot-toast": "^2.6.0",
     "react-router": "^7.9.1",
     "react-router-dom": "^7.9.1",
+    "rest_api_tut": "file:..",
+    "run": "^1.5.0",
     "tailwindcss": "^4.1.13"
   },
   "devDependencies": {
