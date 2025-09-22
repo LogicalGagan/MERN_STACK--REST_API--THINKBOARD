@@ -3,6 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Homepage from './pages/Homepage.jsx';
 import CreateNote from './pages/CreateNote.jsx';
 import Notedetail from './pages/Notedetail.jsx';
+import Auth from './pages/Auth.jsx';
+import ProtectedRoute from './components/ProtectedRoute.jsx';
 import toast, { Toaster } from 'react-hot-toast';
 
 const App = () => {
@@ -21,9 +23,12 @@ const App = () => {
       />
       <div className="relative z-10">
         <Routes>
-          <Route path='/' element={<Homepage />} />
-          <Route path='/create' element={<CreateNote />} />
-          <Route path='/note/:id' element={<Notedetail />} />
+          <Route path='/auth' element={<Auth />} />
+          <Route element={<ProtectedRoute />}>
+            <Route path='/' element={<Homepage />} />
+            <Route path='/create' element={<CreateNote />} />
+            <Route path='/note/:id' element={<Notedetail />} />
+          </Route>
         </Routes>
       </div>
       

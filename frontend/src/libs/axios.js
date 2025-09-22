@@ -4,5 +4,16 @@ const api= axios.create(
     {
         baseURL:BASE_URL,
     }
-)
-export default api
+);
+
+api.interceptors.request.use((config) => {
+    const userInfo = JSON.parse(localStorage.getItem('userInfo'));
+
+    if (userInfo) {
+        config.headers.Authorization = `Bearer ${userInfo.token}`;
+    }
+
+    return config;
+});
+
+export default api;
